@@ -5,19 +5,23 @@ import { Feedback } from "./components/Feedback/Feedback";
 import "./App.css";
 
 function App() {
-  const [click, setClick] = useState({
+  const [values, setValues] = useState({
     good: 0,
     neutral: 0,
     bad: 0,
   });
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    setValues({
+      ...values,
+    });
+  };
 
   return (
     <div>
       <Description />
       <Options />
-      <Feedback />
+      <Feedback good={click.good} neutral={click.neutral} bad={click.bad} />
     </div>
   );
 }
