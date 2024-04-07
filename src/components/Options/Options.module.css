@@ -1,0 +1,9 @@
+.options {
+  display: flex;
+  gap: 8px;
+  font-size: 18px;
+}
+
+.optionBtn {
+  padding: 4px;
+}
